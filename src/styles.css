@@ -1,0 +1,19 @@
+.plasma-wrapper {
+  position: absolute;
+  transition: all;
+  transition-duration: 700ms;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.plasma-block {
+  transition: all;
+  transition-duration: 700ms;
+  position: absolute;
+  border-radius: 9999px;
+  mix-blend-mode: screen;
+}
