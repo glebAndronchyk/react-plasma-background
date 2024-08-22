@@ -8,20 +8,26 @@ export default defineConfig({
     lib: {
       entry: "./src/index.ts",
       name: "react-css-plasma-background",
-      fileName: (format) => `lib.${format}.js`,
+      fileName: "index",
       formats: ["cjs", "es"],
     },
     rollupOptions: {
       external: ["react", "react-dom"],
-      // output: {
-      //   globals: {
-      //     react: "React",
-      //     "react-dom": "ReactDOM",
-      //   },
-      // },
     },
     sourcemap: true,
     emptyOutDir: true,
   },
-  plugins: [cssPlugin(), react(), dtsPlugin({ insertTypesEntry: true })],
+  plugins: [
+    cssPlugin(),
+    react(),
+    dtsPlugin({
+      rollupTypes: true,
+      beforeWriteFile: (filePath, content) => {
+        return {
+          filePath,
+          content: content.replace(/export \{ \}/g, ""),
+        }
+      }
+    })
+  ],
 });
