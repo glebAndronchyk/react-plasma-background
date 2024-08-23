@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { PlasmaConfig, PlasmaColorTuple, UsePlasmaReturn, InitialPlasmaConfig } from "../types";
+import {
+  PlasmaConfig,
+  PlasmaColorTuple,
+  UsePlasmaReturn,
+  InitialPlasmaConfig,
+} from "../types";
 import { defaultPlasmaConfig } from "../constants";
 
 export const usePlasmaConfig = (

@@ -7,8 +7,7 @@ import { useAnimationConfiguration } from "./useAnimationConfiguration";
 
 export const usePlasmaBlockAnimation = (animationType: PlasmaKeyframeType) => {
   const blockRef = useRef<HTMLDivElement>(null);
-  const [blockAnimation, setBlockAnimation] =
-    useState<PlasmaBlockAnimation>();
+  const [blockAnimation, setBlockAnimation] = useState<PlasmaBlockAnimation>();
 
   const {
     config: { speed },
