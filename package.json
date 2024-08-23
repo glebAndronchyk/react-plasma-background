@@ -13,12 +13,13 @@
     "ts",
     "0 dependencies"
   ],
+  "homepage": "https://github.com/glebAndronchyk/react-plasma-background",
   "private": false,
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     "./dist",
     "./README.md",
