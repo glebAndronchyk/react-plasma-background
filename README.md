@@ -1,4 +1,4 @@
-# react-css-plasma-background
+# react-plasma-background
 
 A small library for React that provides a background component with a simple plasma effect. The effect is generated randomly based on the passed animation configuration and is built using the Web Animations API🔮.
 
@@ -12,16 +12,16 @@ A small library for React that provides a background component with a simple pla
 
 ```
 // Yarn
-yarn add react-css-plasma-background
+yarn add react-plasma-background
 
 // npm
-npm i react-css-plasma-background
+npm i react-plasma-background
 ```
 
 2. Import the `PlasmaBackground` component and use it as is. Pass all your content via `children`.
 
 ```javascript
-import { PlasmaBackground } from "react-css-plasma-background";
+import { PlasmaBackground } from "react-plasma-background";
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
 3. To control the animation at runtime, the library provides a hook that works only within the scope of the `PlasmaBackground` component.
 
 ```javascript
-import { usePlasmaContext } from 'react-css-plasma-background'
+import { usePlasmaContext } from 'react-plasma-background'
 
 function ChildComponent() {
   const {
@@ -59,7 +59,7 @@ function ChildComponent() {
 
 ```typescript
 import { useRef, useEffect } from "react"
-import { PlasmaBackground, UsePlasmaReturn } from 'react-css-plasma-background'
+import { PlasmaBackground, UsePlasmaReturn } from 'react-plasma-background'
 
 function App() {
   const plasmaBackgroundRef = useRef<UsePlasmaReturn>(null);
@@ -84,7 +84,7 @@ function App() {
 - The library also exposes default configurations, so feel free to use them and override as needed.
 
 ```typescript
-import { defaultPlasmaConfig, defaultAnimationConfig } from 'react-css-plasma-background'
+import { defaultPlasmaConfig, defaultAnimationConfig } from 'react-plasma-background'
 
 function App() {
   return (
@@ -252,7 +252,7 @@ const usePlasmaContext = (): PlasmaControls & { config: PlasmaConfig } => { ... 
 
 ## Feedback
 
-This is my first JS library, so feel free to criticize :D. Also, I've never built something related to graphics, so if you find any issues, please refer to [GitHub](https://github.com/glebAndronchyk/react-css-plasma-background/issues) and create them there.
+This is my first JS library, so feel free to criticize :D. Also, I've never built something related to graphics, so if you find any issues, please refer to [GitHub](https://github.com/glebAndronchyk/react-plasma-background/issues) and create them there.
 
 Want to discuss the library logic?
 

@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/index.ts",
-      name: "react-css-plasma-background",
+      name: "react-plasma-background",
       fileName: "index",
       formats: ["cjs", "es"],
     },
